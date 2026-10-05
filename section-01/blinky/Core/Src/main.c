@@ -104,10 +104,17 @@ int main(void) {
 
 
     Don't write code outside the while loop.
+    //Turns on LED for 500ms
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    HAL_Delay(500);
 
-    
-    Delete this comment and write your code here.
-    
+    //Turns off LED for 500 ms
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);)
+    HAL_Delay(500);
+
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    HAL_Delay(500);
+
     */
 
     /* USER CODE BEGIN 3 */
